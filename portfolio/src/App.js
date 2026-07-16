@@ -53,17 +53,17 @@ function App() {
       <section id="about" className="section about">
         <h1>My Skills</h1>
         <div className="skills-grid">
-          <div className="skill-card"><img src = "flutter.png" className='skill-logo'></img>Flutter</div>
-          <div className="skill-card"><img src = "dart.png" className='skill-logo'></img>Dart</div>
-          <div className="skill-card"><img src = "logo.svg" className='skill-logo'></img>React</div>
-          <div className="skill-card"><img src = "js.png" className='skill-logo'></img>JavaScript</div>
-          <div className="skill-card"><img src = "css.png" className='skill-logo'></img>CSS3</div>
-          <div className="skill-card"><img src = "node.png" className='skill-logo'></img>Node.js</div>
-          <div className="skill-card"><img src = "mongo.png" className='skill-logo'></img>MongoDB
-          MySQL
+          <div className="skill-card"><img src = "flutter.png" alt = "" className='skill-logo'></img>Flutter</div>
+          <div className="skill-card"><img src = "dart.png" alt = "" className='skill-logo'></img>Dart</div>
+          <div className="skill-card"><img src = "logo.svg" alt = "" className='skill-logo'></img>React</div>
+          <div className="skill-card"><img src = "js.png" alt = "" className='skill-logo'></img>JavaScript</div>
+          <div className="skill-card"><img src = "css.png" alt = "" className='skill-logo'></img>CSS3</div>
+          <div className="skill-card"><img src = "node.png" alt = "" className='skill-logo'></img>Node.js</div>
+          <div className="skill-card"><img src = "mongo.png" alt = "" className='skill-logo'></img>MongoDB
+          <img src = "mysql.png" alt = "" className='skill-logo'></img>MySQL
           Firebase</div>
-          <div className="skill-card"><img src = "ml.png" className='skill-logo'></img>Machine Learning</div>
-          <div className="skill-card"><img src = "transformer.png" className='skill-logo'></img>Generative AI</div>
+          <div className="skill-card"><img src = "ml.png" alt = "" className='skill-logo'></img>Machine Learning</div>
+          <div className="skill-card"><img src = "transformer.png" alt = "" className='skill-logo'></img>Generative AI</div>
         </div>
       </section>
 

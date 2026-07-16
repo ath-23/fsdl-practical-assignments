@@ -30,12 +30,10 @@ Assignment 07
 Assignment 08
 
 ## Hosted Website
-
-(Add after deployment)
+https://fsdl-practical-assignments-pr79.vercel.app/
 
 ## Repository Link
-
-(Add GitHub link)
+https://github.com/ath-23/fsdl-practical-assignments
 
 ## Technologies Used
 

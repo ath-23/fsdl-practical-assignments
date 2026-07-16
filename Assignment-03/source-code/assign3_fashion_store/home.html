@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>FashionHub</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(fashion_store_banner.jpg);
+            background-size: cover; background-position: center;
+            height: 60vh; display: flex; align-items: center; justify-content: center; color: white;
+        }
+
+        .hero-section h1{
+            font-size: 60px;
+        }
+        .product-card img { height: 300px; object-fit: cover; }
+        section { padding: 60px 0; }
+        .category-title { margin-bottom: 40px; font-weight: 800; letter-spacing: 2px; }
+        h1{ font-family: 'Montserrat', sans-serif;}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">FashionHub</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#clothing">Clothing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shoes">Shoes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#caps">Caps</a></li>
+                </ul>
+                <div class="ms-auto">
+                    <a class = "btn btn-primary" href = "login.html" style = "background-color:white; color: black; margin-right: 15px; border: 1px solid #ccc;">Login</a>
+                    <a class="btn btn-primary" href="cart.html" style ="background-color: #cc7722; color: black; border: 1px solid black;">View Cart</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <h1>Find your style</h1>
+    </header>
+
+    <section id="clothing" class="bg-white">
+        <div class="container">
+            <h2 class="text-center category-title">CLOTHING</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="white_tshirt.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Urban Tee</h5>
+                            <p class="text-muted small">Premium Cotton</p>
+                            <h6 class="text-primary">$25.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Urban Tee', 25)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="black monkey_all black wear.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Black Monkey</h5>
+                            <p class="text-muted small">Summer Edition</p>
+                            <h6 class="text-primary">$60.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Black Monkey', 60)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="white_fur_jacket.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Furlo</h5>
+                            <p class="text-muted small">Winter jacket</p>
+                            <h6 class="text-primary">$90.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Furlo', 90)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="beige_coat.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Raymond</h5>
+                            <p class="text-muted small">Casual coat</p>
+                            <h6 class="text-primary">$25.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Raymond', 25)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="denim_jeans.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>GAP</h5>
+                            <p class="text-muted small">Everyday jeans</p>
+                            <h6 class="text-primary">$15.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('GAP', 15)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="columbia_jersey.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Nike</h5>
+                            <p class="text-muted small">Authentic jersey</p>
+                            <h6 class="text-primary">$20.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Nike', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--shoes section-->
+    <section id="shoes" class="bg-light border-top">
+        <div class="container">
+            <h2 class="text-center category-title">FOOTWEAR</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="nike_red.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Nike</h5>
+                            <p class="text-muted small">Faster response</p>
+                            <h6 class="text-primary">$25.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Nike red', 25)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="nike_black.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Nike</h5>
+                            <p class="text-muted small">Fashion wear</p>
+                            <h6 class="text-primary">$60.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Nike black', 60)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="asics_white.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Asics</h5>
+                            <p class="text-muted small">Classic running shoes</p>
+                            <h6 class="text-primary">$20.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Asics white', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="newbal_blue.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>New Balance</h5>
+                            <p class="text-muted small">Funky flow</p>
+                            <h6 class="text-primary">$25.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('New Balance Blue', 25)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="newbal_purple.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>New Balance</h5>
+                            <p class="text-muted small">Buzzflo</p>
+                            <h6 class="text-primary">$35.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('New Balance purple', 35)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="cleats.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>New Balance</h5>
+                            <p class="text-muted small">Football trainers</p>
+                            <h6 class="text-primary">$20.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('New Balance cleats', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--caps section-->
+    <section id="caps" style="background-color: #f8f9fa;" class="border-top">
+        <div class="container">
+            <h2 class="text-center category-title">ACCESSORIES & CAPS</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="classic_cap.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Nike</h5>
+                            <p class="text-muted small">Classic white cap</p>
+                            <h6 class="text-primary">$12.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Nike cap', 12)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="canada_cap.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Quebec</h5>
+                            <p class="text-muted small">Fashion wear</p>
+                            <h6 class="text-primary">$10.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Quebec cap', 10)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="beige_cap.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Asics</h5>
+                            <p class="text-muted small">Rustic</p>
+                            <h6 class="text-primary">$20.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Asics beige cap', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="beanie.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Woolworks</h5>
+                            <p class="text-muted small">Funky look</p>
+                            <h6 class="text-primary">$15.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Woolworks beanie', 15)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="hat.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Hatters</h5>
+                            <p class="text-muted small">Gentleman look</p>
+                            <h6 class="text-primary">$35.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Hatters hat', 35)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card product-card shadow-sm border-0">
+                        <img src="woolen_cap.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Polaria</h5>
+                            <p class="text-muted small">Knitted wear</p>
+                            <h6 class="text-primary">$20.00</h6>
+                            <button class="btn btn-dark btn-sm w-100" onclick="addToCart('Polaria knitted cap', 20)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>FashionHub &copy; 2026</p>
+    </footer>
+
+    <script>
+        function addToCart(name, price) {
+            let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+            cart.push({ name, price });
+            sessionStorage.setItem('cart', JSON.stringify(cart));
+            alert(name + " added to cart!");
+        }
+    </script>
+</body>
+</html>
